@@ -1,10 +1,12 @@
 #user_name becomes the first item in the array ARGV
 user_name = ARGV.first
+food = ARGV.last
 
 #where they write their name
-prompt = '> '
+prompt = '---------'
  
 puts "Hi #{user_name}."
+puts "I know how much you like #{food}"
 puts "I'd like to ask you a few questions."
 puts "Do you like me #{user_name}? ", prompt
 likes = $stdin.gets.chomp
